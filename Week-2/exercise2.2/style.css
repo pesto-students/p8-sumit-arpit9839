@@ -1,0 +1,67 @@
+
+      #red {
+        position: relative;
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        transition: transform 1s linear;
+      }
+      #parent:hover > #red {
+        transform: rotate(-90deg) translate(0px, -50px);
+      }
+
+      #green {
+        position: relative;
+        background-color: green;
+        height: 50px;
+        width: 50px;
+        top: -100px;
+        left: 50px;
+        transition: transform 1s linear;
+      }
+      #parent:hover > #green {
+        transform: rotate(-90deg) translate(0px, 50px);
+      }
+
+      #yellow {
+        position: relative;
+        background-color: yellow;
+        height: 50px;
+        width: 50px;
+        left: 50px;
+        top: -50px;
+        transition: transform 1s linear;
+      }
+      #parent:hover > #yellow {
+        transform: rotate(90deg) translate(0px, -50px);
+      }
+      #blue {
+        position: relative;
+        background-color: blue;
+        height: 50px;
+        width: 50px;
+        top: -50px;
+        transition: transform 1s linear;
+      }
+      #parent:hover > #blue {
+        transform: rotate(90deg) translate(0px, 50px);
+      }
+      #parent {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+      }
+      #parent1 {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+       
+        text-align: center;
+        
+        color:black;
+        top: 58%;
+        left: 50%;
+      }
+    
