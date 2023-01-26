@@ -1,0 +1,16 @@
+<script>
+function greet(greeting,name){
+console.log(greeting ,name);
+}
+
+let person ={
+  name:"arpit"
+  };
+
+greet.call(person,person.name);
+
+greet.apply(person,[person.name,"hy"]);
+
+let bGreet=greet.bind(person,"hy");
+bGreet(person.name);
+</script>
