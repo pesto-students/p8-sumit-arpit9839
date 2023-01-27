@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: arial;
+      }
+      header {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+        background-image: linear-gradient(#24252a, black);
+        opacity: 86%;
+      }
+      footer {
+        bottom: 0px;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        margin-top: 2%;
+        background-image: linear-gradient(#24252a, black);
+        opacity: 86%;
+      }
+      .logo {
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        color: white;
+		
+      }
+      nav li {
+        display: inline-block;
+        list-style: none;
+        padding: 10px 25px;
+      }
+      a,
+      button {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      nav li a:hover {
+        color: #0088a9;
+        transition: all 0.4s ease os;
+      }
+      .container {
+        margin-top: 2%;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+      }
+      form {
+        width: 100%;
+        text-align: center;
+      }
+      .page {
+        color: #66fcf1;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .title {
+        margin-top: 2%;
+      }
+      .input-container {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+      }
+
+      .input-container input,
+      .input-container select,
+      .input-container textarea {
+        padding: 7px;
+        margin-right: 30%;
+      }
+
+      .input-container label {
+        text-align: left;
+      }
+      button {
+        background-color: #0088a9;
+        padding: 9px 25px;
+        border: none;
+        border-radius: 8px;
+        transition: all 0.4s ease 0s;
+      }
+      .input-container {
+        display: grid;
+        grid-template-columns: 0.3fr 0.7fr;
+        grid-gap: 20px;
+        align-items: center;
+        margin: 15px 10px;
+      }
+      .input-container label {
+        text-align: right;
+      }
+
+      .input-container input,
+      .input-container select,
+      .input-container textarea {
+        padding: 10px;
+      }
+      button[type="submit"] {
+        background-color: #66fcf1;
+        padding: 10px 15px;
+        border: none;
+        margin: auto;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+        color: #202833;
+      }
+
+      form button[type="submit"]:hover {
+        background-color: aqua;
+        color: #fff;
+      }
+      h3 {
+        text-align: center;
+        color: white;
+      }
+      .img {
+	  
+        text-align:center;
+		margin-top:2%;
+		margin-left:4%;
+      }
+	  .img-block {
+	    
+        text-align:center;
+		margin-top:2%;
+		margin-left:4%;
+		margin-right:4%;
+      }
+      .container {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card-2 {
+        height: 400px;
+        width: 500px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px,
+          rgba(0, 46, 170, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -10px 10px,
+          rgba(0, 0, 0, 0.05) -0 0;
+      }
+      .page-wrapper .main-content {
+        background-color: rgb(161, 144, 144);
+        font-size: 1.1em;
+        padding: 20px 50px;
+		border-radius:5px;
+		margin-left:4%;
+		margin-right:4%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Blog</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./blog1.html">blog 1</a></li>
+          <li><a href="./blog2.html">blog 2</a></li>
+          <li><a href="./blog3.html">blog 3</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <button><a href="#">logout</a></button>
+    </header>
+    <div class="title">
+      <h3 class="page">BLOG</h3>
+    </div>
+    <div>
+      <div class="page-wrapper">
+        
+          <section class="article">
+            <div class="img">
+              <img src=./image.jpg>
+            </div>
+			<div class="main-content">
+            <h2 class="sect">What is Lorem Ipsum?</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum. Why do we use it? It is a long established fact that
+              a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it
+              has a more-or-less normal distribution of letters, as opposed to
+              using 'Content here, content here', making it look like readable
+              English. Many desktop publishing packages and web page editors now
+              use Lorem Ipsum as their default model text, and a search for
+              'lorem ipsum' will uncover many web sites still in their infancy.
+              Various versions have evolved over the years, sometimes by
+              accident, sometimes on purpose (injected humour and the like).
+              Where does it come from? Contrary to popular belief, Lorem Ipsum
+              is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old.
+              Richard McClintock, a Latin professor at Hampden-Sydney College in
+              Virginia, looked up one of the more obscure Latin words,
+              consectetur, from a Lorem Ipsum passage, and going through the
+              cites of the word in classical literature, discovered the
+              undoubtable source. Lorem Ipsum comes from sections 1.10.32 and
+              1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good
+              and Evil) by Cicero, written in 45 BC. This book is a treatise on
+              the theory of ethics, very popular during the Renaissance. The
+              first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+              from a line in section 1.10.32. The standard chunk of Lorem Ipsum
+              used since the 1500s is reproduced below for those interested.
+              Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"
+              by Cicero are also reproduced in their exact original form,
+              accompanied by English versions from the 1914 translation by H.
+              Rackham. Where can I get some? There are many variations of
+              passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words
+              which don't look even slightly believable. If you are going to use
+              a passage of Lorem Ipsum, you need to be sure there isn't anything
+              embarrassing hidden in the middle of text. All the Lorem Ipsum
+              generators on the Internet tend to repeat predefined chunks as
+              necessary, making this the first true generator on the Internet.
+              It uses a dictionary of over 200 Latin words, combined with a
+              handful of model sentence structures, to generate Lorem Ipsum
+              which looks reasonable. The generated Lorem Ipsum is therefore
+              always free from repetition, injected humour, or
+              non-characteristic words etc. 5 paragraphs words bytes lists Start
+              with 'Lorem ipsum dolor sit amet...'
+            </p>
+			</div>
+          </section>
+      
+    </div>
+	
+    <div  class="container">>
+	
+      <div class="card-2">
+	  <div style="margin-left:3%;" "margin-right:3%;">
+	  <div class="title">
+      <h3 class="page">BLOG</h3>
+	  
+	  <section class="article">
+            <div class="img-block">
+              <img src=./photo.jpg>
+            </div>
+			<h2 style="margin-top:3%;" class="sect">What is Lorem Ipsum?</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard 
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book..... <a style="color:blue;" href="./blog2.html"><b>seemore</b></a>.
+    </div>
+	</div>
+	  </div>
+    </div>
+	
+    <div  class="container">>
+	
+      <div class="card-2">
+	  <div style="margin-left:3%;" "margin-right:3%;">
+	  <div class="title">
+      <h3 class="page">BLOG</h3>
+	  
+	  <section class="article">
+            <div class="img-block">
+              <img src=./images.jpg>
+            </div>
+			<h2 style="margin-top:3%;" class="sect">What is Lorem Ipsum?</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard 
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book..... <a style="color:blue;" href="./blog3.html"><b>seemore</b></a>.
+    </div>
+	</div>
+	  </div>
+    </div>
+    <footer>
+      <h3>
+        Design and Developed by Arpit shukla. All Rights Reserved &#169; .
+      </h3>
+    </footer>
+  </body>
+</html>
