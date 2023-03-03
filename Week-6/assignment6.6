@@ -1,0 +1,37 @@
+function threesum(arr,number){
+    let diff =Infinity;
+    let ans =0;
+    let sorted = arr.sort((a,b)=>a-b);
+    
+    for(let i=0;i<sorted.length;i++){
+        let fix = sorted[i]
+        let start = [i+1];
+        let end = sorted.length-1;
+        
+        while(start<end){
+           let sum = fix+sorted[start]+sorted[end];
+           
+           if(sum == number){
+           
+           return sum;
+           }
+           else if (Math.abs(number - sum) < diff){
+            diff =number - sum;
+            ans = sum;
+            
+           }
+           if(sum>number){
+            end--;
+        }
+           else {
+                start++;
+            }
+           
+        }
+    }
+    return ans;
+
+}
+const ll =threesum([-1,2,1,-4],1);
+
+console.log(ll)
